@@ -6,9 +6,9 @@
 #include <input.h>
 #include <web_server.h>
 
-int system_server()
+int input()
 {
-    printf("나 system_server 프로세스!\n");
+    printf("나 input 프로세스!\n");
 
     while (1) {
         sleep(1);
@@ -17,12 +17,14 @@ int system_server()
     return 0;
 }
 
-int create_system_server()
+int create_input()
 {
     pid_t systemPid;
-    const char *name = "system_server";
+    const char *name = "input";
 
-    printf("여기서 시스템 프로세스를 생성합니다.\n");
+    printf("여기서 input 프로세스를 생성합니다.\n");
+
+    /* fork 를 이용하세요 */
 
     return 0;
 }
