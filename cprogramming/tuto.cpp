@@ -1,10 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    char kim = 'K';
-    string younghwan = "YoungHwan";
+class YoungHwan {
+    public:
+        int number;
+        string dept;
 
-    cout << kim << "\n" << younghwan << endl;
+        void printdept() {
+            cout << dept << endl;
+        }
+};
+
+
+int main() {
+    YoungHwan young;
+    young.dept = "IS";
+    young.printdept();
     return 0;
 }
